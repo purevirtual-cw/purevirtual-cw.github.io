@@ -1,0 +1,1221 @@
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+button:active,
+button:focus,
+a:active,
+a:focus,
+a:visited {
+    outline: none !important;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.title {
+    padding: 100px 0 80px 0;
+}
+
+.title .line {
+    background: #97d1eb;
+    height: 1px;
+    margin: 0 20px;
+    width: 100px;
+}
+
+.title .title-text {
+    color: #146ed0;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+.button {
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 14px 28px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 4px;
+    text-decoration: none;
+    border: 1px solid #000;
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+}
+
+.button:hover {
+    background: none;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid #000;
+}
+
+.onepx {
+    display: inline-block;
+    width: 2px;
+    position: absolute;
+    left: 160px;
+    background-color: #eff1f5;
+}
+
+.carousel-item {
+    box-sizing: border-box;
+    max-height: 400px;
+    border-top: 2px solid #eff1f5;
+    border-bottom: 2px solid #eff1f5;
+}
+
+.carousel-item img {
+    margin-left: auto;
+    display: block;
+    margin-right: 0;
+    width: 100%;
+}
+
+.hero .carousel-caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    right: 0;
+    max-height: 400px;
+    bottom: 0;
+    padding: 0;
+    transform: translateY(-50%);
+    text-align: left;
+    font-family: "Raleway", sans-serif;
+    display: flex !important;
+    align-items: center;
+}
+
+.hero .carousel-caption .slide-title {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.hero .carousel-caption h1 {
+    color: #000;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 50px;
+    margin-top: 58px;
+    margin-bottom: 58px;
+}
+
+.hero .carousel-caption p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    color: #9ca2b4;
+    font-size: 16px;
+    display: none;
+    margin-bottom: 32.5px;
+}
+
+.hero .carousel-caption .slide-number {
+    background-color: #146ed0;
+    display: inline-block;
+    font-size: 30px;
+    height: 80px;
+    width: 80px;
+    position: relative;
+}
+
+.hero .carousel-caption .slide-number span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider-control {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 999;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-control .carousel-control-prev {
+    position: relative !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 40px;
+    background: #fff;
+    opacity: 1;
+    border: 2px solid #eff1f5;
+    transition: all 0.3s ease;
+}
+
+.slider-control .carousel-control-prev:hover {
+    background: #000;
+    border: #000;
+    transition: all 0.3s ease;
+}
+
+.slider-control .placeholder-for-number {
+    width: 80px;
+    display: inline-block;
+    height: 80px;
+}
+
+.slider-control .carousel-control-next {
+    position: relative !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 40px;
+    background: #fff;
+    transition: all 0.3s ease;
+    opacity: 1;
+    border: 2px solid #eff1f5;
+}
+
+.slider-control .carousel-control-next:hover {
+    background: #000;
+    border: #000;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicators {
+    display: none;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.title-lg {
+    color: #9ca2b4;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.services {
+    background-image: url("../img/logo-shape.png");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: bottom right;
+}
+
+.services p {
+    color: #9ca2b4;
+    font-size: 14px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.logo-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-bg h2 {
+    color: #000;
+    font-weight: 800;
+    font-family: "Raleway", sans-serif;
+    font-size: 60px;
+}
+
+.grid .grid-item {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border: none;
+    height: 420px;
+    padding: 0 40px;
+    transition: all 0.3s ease;
+}
+
+.grid .grid-item h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 30px 0;
+}
+
+.grid .grid-item p {
+    line-height: 36px;
+    font-size: 14px;
+    margin-bottom: 30px;
+    display: none;
+}
+
+.grid .grid-item a {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: none;
+}
+
+.grid .grid-item a:hover {
+    padding-left: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.grid .grid-item:hover {
+    background: #5d9de2 url("../img/logo-light-shapte.png");
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease;
+}
+
+.grid .grid-item:hover p {
+    display: block;
+}
+
+.grid .grid-item:hover a {
+    display: inline;
+}
+
+.grid .one {
+    background-image: url("../img/infrastructure.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid .two {
+    background-image: url("../img/virtualization.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid .three {
+    background-image: url("../img/digitaltransformation.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid .four {
+    background-image: url("../img/industry.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    padding: 30px 0 30px 0;
+}
+
+.title .title-text {
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.title .line {
+    width: 50px;
+}
+
+.button {
+    font-size: 12px;
+    padding: 10px 20px;
+}
+
+.project-card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+}
+
+.project-card .container {
+    padding: 0;
+}
+
+.project-card .carousel-indicators {
+    margin: 0;
+    justify-content: center;
+    display: none;
+    padding: 0;
+    z-index: 999;
+    bottom: 444px;
+}
+
+.project-card .carousel-indicators li.active {
+    border: none;
+    opacity: 1;
+}
+
+.project-card .carousel-indicators li {
+    opacity: 0.5;
+    border: none;
+    text-indent: 0;
+    width: auto;
+    height: auto;
+}
+
+.project-card .carousel-indicators img {
+    width: 85px;
+}
+
+.project-card .carousel-inner .container {
+    background: #fff;
+}
+
+.project-card .carousel-item {
+    border: none;
+    max-height: 1000px;
+    background: #fff;
+}
+
+.project-card .carousel-item img {
+    width: 100%;
+    margin: 0;
+}
+
+.project-card .carousel-item .carousel-caption {
+    width: 100%;
+}
+
+.project-card .carousel-caption {
+    padding: 40px;
+    text-align: center;
+    position: static;
+}
+
+.project-card .carousel-caption h3 {
+    font-size: 24px;
+    line-height: 36px;
+    padding: 0;
+    margin-bottom: 0;
+    color: #000;
+    font-family: "Raleway", sans-serif;
+}
+
+.project-card .carousel-caption p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    line-height: 36px;
+    display: block;
+    color: #9ca2b4;
+    padding: 22px 0 22px 0;
+    margin-bottom: 0;
+}
+
+.project-card .carousel-caption .background-number {
+    float: right;
+    margin-top: -200px;
+    font-size: 250px;
+    z-index: -1;
+    color: #efefef;
+    font-family: "Raleway", sans-serif;
+}
+
+.project-card .project-slider-control {
+    display: none;
+}
+
+.logos {
+    padding: 40px 0;
+}
+
+.logos div {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logos img {
+    max-height: 40px;
+}
+
+.nav-pills {
+    padding: 60px 20px;
+}
+
+.nav-pills .nav-link {
+    color: #9ca2b4 !important;
+    font-family: "Raleway", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0px;
+    font-weight: 800;
+    border-radius: 0;
+    padding: 0;
+}
+
+.nav-pills .nav-link.active {
+    color: #146ed0 !important;
+    border-bottom: 1px solid #146ed0;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link:hover {
+    color: #146ed0 !important;
+    border-bottom: 1px solid #146ed0;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-pills .nav-item {
+    border: none;
+    margin-right: 20px;
+}
+
+.nav-pills .nav-item:hover {
+    border: none;
+}
+
+.contact {
+    margin: 0;
+    margin-top: 30px;
+}
+
+.contact .row {
+    height: 700px;
+    border: 16px solid #146ed0;
+}
+
+.contact-bg {
+    z-index: -1;
+    height: calc(100% + 80px);
+    position: relative;
+    bottom: 40px;
+    left: 40px;
+    background: url("../img/contact.jpg") no-repeat center;
+    background-size: cover;
+    display: none;
+}
+
+#pills-contact form {
+    z-index: 2;
+    position: relative;
+    padding-left: 20px;
+}
+
+#pills-contact form ::placeholder {
+    color: #e6e7ec;
+    opacity: 1;
+}
+
+#pills-contact form :-ms-input-placeholder {
+    color: #e6e7ec;
+}
+
+#pills-contact form ::-ms-input-placeholder {
+    color: #e6e7ec;
+}
+
+#pills-contact form #form_name,
+#pills-contact form #form_phone,
+#pills-contact form #form_email,
+#pills-contact form #form_message {
+    border: none;
+    border-bottom: 1px solid #e6e7ec;
+    padding-left: 0;
+    margin-bottom: 10px;
+    color: #9ca2b4;
+    border-radius: 0;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+#pills-contact form #form_message {
+    font-size: 18px;
+    line-break: 36px;
+    resize: none;
+}
+
+#pills-contact form .submit-button {
+    justify-content: start;
+}
+
+#pills-contact form input.button {
+    margin: 20px 0 0 0;
+    padding: 16px 60px;
+}
+
+#pills-contact form textarea:focus,
+#pills-contact form input:focus {
+    box-shadow: none;
+    outline: 0 none;
+}
+
+.contact h4 {
+    padding-left: 60px;
+    padding-top: 20px;
+    font-family: "Raleway", sans-serif;
+    color: #9ca2b4;
+    font-size: 36px;
+}
+
+@media (min-width: 576px) {
+    .title .line {
+        width: 50px;
+    }
+    .onepx {
+        left: 80px;
+        height: 100%;
+    }
+    .slider-control {
+        left: 62px;
+    }
+    .slider-control .carousel-control-prev {
+        width: 36px;
+        height: 36px;
+    }
+    .slider-control .placeholder-for-number {
+        width: 80px;
+        display: inline-block;
+        height: 80px;
+    }
+    .slider-control .carousel-control-next {
+        width: 36px;
+        height: 36px;
+    }
+    .carousel-item img {
+        width: 65%;
+    }
+    .hero .carousel-caption {
+        left: 40px;
+        top: 50%;
+        right: 0;
+        bottom: 0;
+        padding: 0;
+    }
+    .hero .carousel-caption .slide-title {
+        margin-left: 18px;
+    }
+    .hero .carousel-caption h1 {
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 50px;
+        margin-top: 34px;
+        margin-bottom: 34px;
+    }
+    .hero .carousel-caption p {
+        display: none;
+    }
+    .hero .carousel-caption .slide-number {
+        font-size: 30px;
+        height: 80px;
+        width: 80px;
+    }
+    .carousel-indicators {
+        display: flex;
+        justify-content: start;
+        margin-left: 80px;
+        margin-bottom: 0;
+    }
+    .carousel-indicators li {
+        text-indent: 0;
+        font-size: 10px;
+        width: auto;
+        font-family: "Raleway", sans-serif;
+        font-weight: 800;
+        height: auto;
+        margin: 0 6px;
+        padding: 0 3px;
+        background: none;
+        color: #9ca2b4;
+        opacity: 1;
+    }
+    .carousel-indicators li.active {
+        color: #000;
+        border-bottom: 2px solid #000;
+        height: 8px;
+    }
+    .grid .grid-item {
+        height: 420px;
+        padding: 40px;
+    }
+    .grid .grid-item h3 {
+        font-size: 24px;
+        line-height: 36px;
+        margin: 30px 0;
+    }
+    .grid .grid-item p {
+        line-height: 30px;
+        font-size: 14px;
+        margin-bottom: 34px;
+    }
+    .project-card .carousel-indicators {
+        top: 450px;
+        display: flex;
+    }
+    .project-card .carousel-caption {
+        padding-top: 140px;
+    }
+    .nav-pills .nav-item {
+        margin-right: 24px;
+    }
+    .nav-pills .nav-link {
+        font-size: 14px;
+        letter-spacing: 3px;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel {
+        max-height: calc(100vh - 129px);
+    }
+    .onepx {
+        left: 90px;
+    }
+    .carousel-item {
+        max-height: calc(100vh - 129px);
+    }
+    .carousel-item img {
+        width: 65%;
+    }
+    .slider-control {
+        left: 70px;
+    }
+    .slider-control .carousel-control-prev {
+        width: 40px;
+        height: 40px;
+    }
+    .slider-control .placeholder-for-number {
+        width: 100px;
+        display: inline-block;
+        height: 100px;
+    }
+    .slider-control .carousel-control-next {
+        width: 40px;
+        height: 40px;
+    }
+    .hero .carousel-caption {
+        left: 40px;
+        top: 50%;
+        right: 0;
+        bottom: 0;
+        max-height: calc(100vh - 123px);
+        padding: 0;
+    }
+    .hero .carousel-caption .slide-title {
+        margin-left: 18px;
+    }
+    .hero .carousel-caption h1 {
+        font-size: 38px;
+        font-weight: 800;
+        line-height: 62px;
+        margin-top: 0px;
+        margin-bottom: 34px;
+    }
+    .hero .carousel-caption p {
+        display: flex;
+        font-size: 14px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .hero .carousel-caption .slide-number {
+        font-size: 40px;
+        height: 100px;
+        width: 100px;
+    }
+    .carousel-indicators {
+        margin-left: 90px;
+        margin-bottom: 8px;
+    }
+    .carousel-indicators li {
+        font-size: 12px;
+        margin: 0 11px;
+        padding: 0 4px;
+    }
+    section {
+        padding: 100px 0;
+    }
+    .services {
+        background-size: 250px;
+        background-position: right;
+    }
+    .services p {
+        font-size: 12px;
+        line-height: 30px;
+        text-align: left;
+    }
+    .services h2 {
+        font-size: 46px;
+        padding-bottom: 30px;
+        text-align: left;
+    }
+    .logo-bg h2 {
+        font-size: 50px;
+    }
+    .logos {
+        padding-top: 180px;
+    }
+    .project-card .carousel-indicators {
+        bottom: 0;
+        top: 580px;
+    }
+    .nav-pills {
+        padding: 60px;
+    }
+    .nav-pills .nav-item {
+        margin-right: 30px;
+    }
+    #pills-contact form {
+        padding-left: 60px;
+    }
+    #pills-contact form #form_name,
+    #pills-contact form #form_phone,
+    #pills-contact form #form_email {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .onepx {
+        left: 140px;
+    }
+    .slider-control {
+        left: 120px;
+    }
+    .slider-control .carousel-control-prev {
+        width: 42px;
+        height: 44px;
+    }
+    .slider-control .placeholder-for-number {
+        width: 120px;
+        display: inline-block;
+        height: 120px;
+    }
+    .slider-control .carousel-control-next {
+        width: 42px;
+        height: 44px;
+    }
+    .hero .carousel-caption {
+        left: 80px;
+        top: 50%;
+        right: 0;
+        bottom: 0;
+        padding: 0;
+    }
+    .hero .carousel-caption .slide-title {
+        margin-left: 30px;
+    }
+    .hero .carousel-caption h1 {
+        font-size: 54px;
+        font-weight: 800;
+        line-height: 80px;
+        margin-bottom: 34px;
+    }
+    .hero .carousel-caption p {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 4px;
+    }
+    .hero .carousel-caption .slide-number {
+        font-size: 50px;
+        height: 120px;
+        width: 120px;
+    }
+    .carousel-indicators {
+        margin-left: 150px;
+        margin-bottom: 8px;
+    }
+    .carousel-indicators li {
+        font-size: 12px;
+        margin: 0 14px;
+        padding: 0 4px;
+    }
+    .container {
+        width: 1024px;
+    }
+    section {
+        padding: 120px 0;
+    }
+    .services {
+        background-size: 300px;
+    }
+    .services p {
+        font-size: 12px;
+        line-height: 36px;
+    }
+    .services h2 {
+        font-size: 50px;
+        padding-bottom: 40px;
+    }
+    .logo-bg h2 {
+        font-size: 60px;
+    }
+    .grid .grid-item {
+        height: 500px;
+        padding: 40px;
+    }
+    .grid .grid-item h3 {
+        font-size: 24px;
+        line-height: 36px;
+        margin: 30px 0;
+    }
+    .grid .grid-item p {
+        line-height: 30px;
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+    .title {
+        padding: 40px 0 40px 0;
+    }
+    .title .title-text {
+        font-size: 12px;
+        letter-spacing: 4px;
+    }
+    .button {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+    .project-card {
+        padding: 60px 0 160px 0;
+    }
+    .project-card .container {
+        padding: 0;
+    }
+    .project-card .carousel-indicators {
+        bottom: -140px;
+        top: auto;
+    }
+    .project-card .carousel-indicators img {
+        width: 150px;
+    }
+    .project-card .carousel-item img {
+        width: 50vw;
+        margin-left: calc(50% - 50vw);
+        display: inline-block;
+    }
+    .project-card .carousel-item .carousel-caption {
+        width: 50%;
+    }
+    .project-card .carousel-caption {
+        text-align: left;
+        padding: 0 0 40px 60px;
+        float: right;
+        position: static;
+    }
+    .project-card .carousel-caption h3 {
+        font-size: 24px;
+        line-height: 36px;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .project-card .carousel-caption p {
+        font-size: 12px;
+        line-height: 36px;
+        padding: 22px 0 22px 0;
+        margin-bottom: 0;
+    }
+    .project-card .carousel-caption .background-number {
+        margin-top: -200px;
+        font-size: 300px;
+    }
+    .project-card .project-slider-control {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        z-index: 999;
+    }
+    .project-card .project-slider-control a {
+        width: 60px;
+        height: 60px;
+        opacity: 1;
+    }
+    .project-card .project-slider-control a img {
+        width: 8px;
+    }
+    .project-card .project-slider-control .carousel-control-next {
+        background: #5d9de2;
+        position: static;
+    }
+    .project-card .project-slider-control .carousel-control-prev {
+        background: #146ed0;
+        position: static;
+    }
+    .logos {
+        padding: 60px 0;
+    }
+    .logos div {
+        padding: 0;
+    }
+    .logos .img {
+        max-height: 70px;
+    }
+    .contact {
+        margin: 60px 0;
+    }
+    .contact .contact-bg {
+        display: inline-block;
+    }
+    .nav-pills {
+        padding: 60px;
+    }
+    .nav-pills .nav-item {
+        margin-right: 20px;
+    }
+    .nav-pills .nav-link {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    #pills-contact form #form_name,
+    #pills-contact form #form_phone,
+    #pills-contact form #form_email {
+        font-size: 30px;
+    }
+    #pills-contact form .submit-button {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1300px) {
+    .slider-control {
+        left: 124px;
+    }
+    .slider-control .carousel-control-prev {
+        width: 72px;
+        height: 74px;
+    }
+    .slider-control .placeholder-for-number {
+        width: 160px;
+        display: inline-block;
+        height: 160px;
+    }
+    .slider-control .carousel-control-next {
+        width: 72px;
+        height: 74px;
+    }
+    .hero .carousel-caption {
+        left: 80px;
+        top: 50%;
+        right: 0;
+        bottom: 0;
+        padding: 0;
+    }
+    .hero .carousel-caption .slide-title {
+        margin-left: 30px;
+    }
+    .hero .carousel-caption h1 {
+        font-size: 80px;
+        font-weight: 800;
+        line-height: 100px;
+        margin-bottom: 56px;
+    }
+    .hero .carousel-caption p {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+    .hero .carousel-caption .slide-number {
+        font-size: 70px;
+        height: 160px;
+        width: 160px;
+    }
+    .carousel-indicators {
+        margin-left: 150px;
+        margin-bottom: 14px;
+    }
+    .carousel-indicators li {
+        font-size: 14px;
+        margin: 0 24px;
+        padding: 0 4px;
+    }
+    .carousel-indicators li.active {
+        height: 10px;
+    }
+    .container {
+        width: 1024px;
+    }
+    section {
+        padding: 150px 0;
+    }
+    .services {
+        background-size: auto;
+    }
+    .services p {
+        font-size: 14px;
+        line-height: 36px;
+    }
+    .services h2 {
+        font-size: 60px;
+        padding-bottom: 60px;
+    }
+    .logo-bg h2 {
+        font-size: 70px;
+    }
+    .grid .grid-item {
+        height: 600px;
+        padding: 40px;
+    }
+    .grid .grid-item h3 {
+        font-size: 30px;
+        line-height: 40px;
+        margin: 30px 0;
+    }
+    .grid .grid-item p {
+        line-height: 30px;
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+    .title {
+        padding: 60px 0 60px 0;
+    }
+    .title .title-text {
+        letter-spacing: 4px;
+        font-size: 13px;
+    }
+    .project-card {
+        padding: 100px 0 160px 0;
+    }
+    .project-card .carousel-caption {
+        padding-left: 100px;
+    }
+    .project-card .carousel-caption h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .project-card .carousel-caption p {
+        font-size: 14px;
+        line-height: 36px;
+        padding: 30px 0 30px 0;
+    }
+    .project-card .carousel-caption .background-number {
+        font-size: 400px;
+    }
+    .project-card .project-slider-control a {
+        width: 100px;
+        height: 100px;
+        opacity: 1;
+    }
+    .contact {
+        margin-top: 120px;
+    }
+    .nav-pills {
+        padding: 60px;
+    }
+    .nav-pills .nav-item {
+        margin-right: 30px;
+    }
+    .nav-pills .nav-link {
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .carousel-item img {
+        width: 70%;
+    }
+    .hero .carousel-caption {
+        left: 180px;
+    }
+    .hero .carousel-caption p {
+        margin-bottom: 30px;
+    }
+    .hero .carousel-caption h1 {
+        margin-bottom: 60px;
+    }
+    .slider-control {
+        left: 224px;
+    }
+    .onepx {
+        left: 260px;
+    }
+    .carousel-indicators {
+        margin-left: 276px;
+    }
+    .carousel-indicators li {
+        font-size: 16px;
+        margin: 0 18px;
+        padding: 0 8px;
+    }
+    .carousel-indicators li.active {
+        height: 12px;
+    }
+    .container {
+        max-width: 1500px;
+        width: 1400px;
+    }
+    section {
+        padding: 180px 0;
+    }
+    .services p {
+        font-size: 14px;
+        line-height: 48px;
+    }
+    .services h2 {
+        font-size: 68px;
+        padding-bottom: 60px;
+    }
+    .logo-bg h2 {
+        color: #000;
+        font-weight: 800;
+        font-family: "Raleway", sans-serif;
+        font-size: 80px;
+    }
+    .grid .grid-item {
+        height: 700px;
+        padding: 70px;
+    }
+    .grid .grid-item h3 {
+        font-size: 34px;
+        line-height: 48px;
+        margin: 40px 0;
+    }
+    .grid .grid-item p {
+        line-height: 36px;
+        font-size: 14px;
+        margin-bottom: 60px;
+    }
+    .project-card {
+        padding: 100px 0 200px 0;
+    }
+    .project-card .carousel-indicators {
+        bottom: -160px;
+    }
+    .project-card .carousel-indicators img {
+        width: 200px;
+    }
+    .project-card .carousel-caption {
+        padding-left: 100px;
+        padding-top: 100px;
+    }
+    .project-card .carousel-caption h3 {
+        font-size: 40px;
+        line-height: 50px;
+        padding: 0;
+    }
+    .project-card .carousel-caption p {
+        font-size: 14px;
+        line-height: 36px;
+        padding: 40px 50px 50px 0;
+    }
+}

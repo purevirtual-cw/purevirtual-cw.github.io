@@ -1,0 +1,66 @@
+.footer {
+    position: relative;
+    height: 600px;
+    background: transparent;
+    margin-top: -20px;
+}
+
+.footer img {
+    width: 200px;
+    margin: 80px auto 20px auto;
+    display: block;
+}
+
+.footer p {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+.footer .imprint {
+    text-align: center;
+    z-index: 1;
+    display: block;
+    font-size: 14px;
+    padding: 16px 0 6px 0;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer .imprint:hover {
+    color: #146ed0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer .bg {
+    background: url("../img/footer-bg.png") no-repeat center;
+    background-size: cover;
+    z-index: -2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+@media (min-width: 576px) {
+    .footer {
+        height: 700px;
+        margin-top: -40px;
+    }
+    .footer img {
+        width: auto;
+        margin-top: 100px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer {
+        height: 980px;
+        margin-top: -200px;
+    }
+    .footer img {
+        margin: 80px auto 20px auto;
+    }
+}
